@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --fontBarlow:"Barlow Semi Condensed", sans-serif;
+    /* Primary */
+    --Moderateviolet: hsl(263, 55%, 52%);
+    --Verydarkgrayish: hsl(217, 19%, 35%);
+    --Verydarkblackish: hsl(219, 29%, 14%);
+    --White: hsl(0, 0%, 100%);
+
+    /* Neutral */
+    --Lightgray: hsl(0, 0%, 81%);
+    --Lightgrayish: hsl(210, 46%, 95%);
+}
+
+* {
+    margin: 0%;
+    box-sizing: border-box;
+    padding: 0%;
+    font-family: var(--fontBarlow);
+}
+
+body {
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    font-size: 13px;
+    line-height: 1.5;
+    font-weight: 500;
+    background-color: #F2F2F2;
+}
+
+main {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    display: grid;
+    gap: 2rem;
+}
+
+.card {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0.5rem;
+    line-height: 1.3;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card-one .thema {
+    padding-bottom: 1.2rem;
+}
+
+.perfil {
+    padding-bottom: 1rem;
+}
+
+.card-one .content{
+    color: #CFCFCF;
+    padding-right: 1rem;
+    line-height: 1.3;
+}
+
+.card-two .thema {
+    padding-bottom: 1.2rem;
+}
+
+.card-two .content{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.card-three .thema{
+    color: #48556A;
+    padding-bottom: 1.2rem;
+}
+
+.card-three .content {
+    color:hsl(217, 19%, 70%);
+}
+
+.card-four .thema{
+    padding-bottom: 1.2rem;
+}
+
+.card-four .content {
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 500;
+}
+
+.card-five .thema {
+    color: #48556A;
+    font-weight: 600;
+    padding-bottom: 1.2rem;
+}
+
+.card-five .content {
+    color: #48556A;
+    font-weight: 500;
+    text-align: left;
+    font-size: 13px;
+    padding-right: 1rem;
+}
+
+.card-one .author,
+.card-two .author,
+.card-four .author {
+    color: var(--White);
+    font-weight: 600;
+}
+
+.card-one .checked,
+.card-two .checked,
+.card-four .checked {
+    color: var(--White);
+    font-weight: 500;
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.card-one .thema,
+.card-two .thema,
+.card-four .thema {
+    color: var(--White);
+    font-weight: 500;
+    font-size: 20px;
+}
+
+
+
+.card-one {
+    background-color: var(--Moderateviolet);
+}
+
+.card-two {
+    background-color: #48556A;
+}
+
+.card-three {
+    background-color: var(--White);
+}
+
+.card-four {
+    background-color: var(--Verydarkblackish);
+}
+
+.card-five {
+    background-color: var(--White);
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+img {
+    width: 2.154rem;
+    border-radius: 50%;
+}
+
+.border-img {
+    border: 2px solid #A775F1;
+}
+
+@media(min-width:768px) {
+    .container-main {
+        width: 720px;
+        height: 600px;
+        grid-template-areas: 
+            "card-one card-one card-five"
+            "card-three card-two card-five"
+            "card-four card-four card-five";
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+    }
+}
+
+@media(min-width: 1024px){
+    .container-main {
+        width: 1000px;
+    }
+}
