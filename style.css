@@ -7,6 +7,7 @@
     --Verydarkgrayish: hsl(217, 19%, 35%);
     --Verydarkblackish: hsl(219, 29%, 14%);
     --White: hsl(0, 0%, 100%);
+    --Lightgrayishblue: hsl(210, 46%, 95%);
 
     /* Neutral */
     --Lightgray: hsl(0, 0%, 81%);
@@ -27,7 +28,7 @@ body {
     font-size: 13px;
     /* line-height: 1.5; */
     font-weight: 500;
-    background-color: #F2F2F2;
+    background-color: var(--Lightgrayishblue);
 }
 
 main {
@@ -166,8 +167,8 @@ img {
 
 @media(min-width:768px) {
     main {
-        padding-left: 2.5rem;
-        padding-right: 2.5rem;
+        padding-left: 12rem;
+        padding-right: 12rem;
     }
 
     .grid-table {
